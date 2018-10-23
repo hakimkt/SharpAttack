@@ -94,10 +94,6 @@
     <Compile Include="Utils\Proccessing.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\SharpSploit\SharpSploit\SharpSploit.csproj">
       <Project>{f4b3c0c5-facd-4960-9146-8852356f6179}</Project>
       <Name>SharpSploit</Name>
