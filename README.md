@@ -34,8 +34,8 @@ WmiExec                       Executes a command against a remote machine over W
 SharpAttack is distributed as source code. Binaries will not be made available. To build SharpAttack:
 
 1. Clone the repo with `git clone --recursive https://github.com/jaredhaight/SharpAttack`
-2. From the `\SharpAttack\SharpSploit` folder, run `msbuild /t:restore` to restore its packages. (Honestly I dont think it has packages, by Visual Studio disagrees)
-3. Build with a recent version of Microsoft's [Visual Studio](https://visualstudio.microsoft.com/vs/). The free, community edition will work fine. 
+2. Build with a recent version of Microsoft's [Visual Studio](https://visualstudio.microsoft.com/vs/). The free, community edition will work fine. 
+    * **BEFORE YOU BUILD** From the `\SharpAttack\SharpSploit` folder, run `msbuild /t:restore` to restore its packages. (Honestly I dont think it has packages, by Visual Studio disagrees)
     * Make sure that when you build the project, you're targeting the version of .NET thats appropriate for your needs. 
     * Your build should result in a copy of SharpAttack.exe and SharpSploit.dll
 4. You can use Microsoft's [ILMerge](https://www.microsoft.com/en-us/download/details.aspx?id=17630) to merge SharpSploit.dll with the SharpAttack executable into a single file (`.\ILMerge.exe SharpAttack.exe SharpSploit.dll /out:.\SharpAttackBundle.exe`). 
