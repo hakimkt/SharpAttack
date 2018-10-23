@@ -7,6 +7,7 @@ namespace SharpAttack.Utils
 {
   public class Printing
   {
+    public static string saVersion = "20181022";
 
     /// <summary>
     /// Takes a string and returns and splits it into an array of strings
@@ -199,10 +200,10 @@ namespace SharpAttack.Utils
     /// </summary>
     public static void StartUp()
     {
-      Console.WriteLine(@"
-SharpAttack v20181020
+      Console.WriteLine(String.Format(@"
+SharpAttack {0}
 https://www.github.com/jaredhaight/SharpAttack
-");
+", saVersion));
     }
   }
 }
